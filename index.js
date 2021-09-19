@@ -54,3 +54,8 @@ client.on("messageCreate", async msg => {
 
 let t = Token ? Token.Token : process.env.token;
 client.login(t);
+
+async function checkOnline() {
+    console.log("online: " + new Date());
+}
+const CheckTO = setInterval(() => checkOnline(), 300000)
