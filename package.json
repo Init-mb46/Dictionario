@@ -1,0 +1,14 @@
+{
+  "name": "dictionario",
+  "version": "1.0.0",
+  "description": "dictionary bot for discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "magicbrave46",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.1.0"
+  }
+}
