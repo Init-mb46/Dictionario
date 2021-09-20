@@ -1,3 +1,5 @@
 {
-    "prefix": "d!"
+  "prefix": "d!",
+  "usage": 63,
+  "usage_limit": "10000"
 }
