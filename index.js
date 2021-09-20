@@ -32,7 +32,6 @@ client.on("messageCreate", async msg => {
     if (msg.author.bot) return;
 
     let pref = Config.prefix;
-    console.log()
     let {args, cmdWPref} = await parseMessage(msg);
 
     if (!cmdWPref.startsWith(pref)) return;
