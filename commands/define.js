@@ -76,7 +76,7 @@ module.exports = {
                             let m = collectedMsgs.first();
                             if (available[m.content.trim().toLowerCase()]) {
                                 let embed2 = new MessageEmbed()
-                                    .setDescription(`${m.content} definition`)
+                                    .setDescription(`${m.content}`)
                                     .setTitle(`Definition of ${word.toLowerCase()}`)
                                     .setColor("BLURPLE")
                                     .setFooter(`Command : ${config.prefix}define`);

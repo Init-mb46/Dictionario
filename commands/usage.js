@@ -15,6 +15,11 @@ module.exports = {
         if (usage_limit - usage < 150) {
             em.addField("USE WITH CAUTION __ APPROACHING API FREE LIMIT (OR PAST LIMIT)", "\u200B");
         }
+
+        if (usage % 25 == 0) {
+            console.log(`${usage} api calls used`);
+        }
+
         return msg.channel.send({embeds: [em]});
     }
 }
