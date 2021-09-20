@@ -43,6 +43,9 @@ module.exports = {
             if (e) {
                 throw e;
             }
+            if (config.usage % 25 == 0) {
+                console.log(`${config.usage} api calls used`);
+            }
         })
 
         let available = {};
