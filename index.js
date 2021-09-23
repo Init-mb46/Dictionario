@@ -44,7 +44,9 @@ client.on("messageCreate", async msg => {
             let cmdName;
             for(const [name, command] of client.commands.entries()) {
                 command.data.aliases.forEach(v => cmd == v ? matched = true : matched = false);
+                console.log("checking aliases");
                 if (matched) {
+                    console.log("alias matched for - "+ name);
                     actualCommand = client.commands.get(name);
                     await actualCommand.execute(msg,args);
                     return;
