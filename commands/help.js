@@ -14,7 +14,8 @@ module.exports = {
     data: {
         name: "help",
         description: "returns a list of all commands.",
-        params: "optional (page number / command name)"
+        params: "optional (page number / command name)",
+        aliases: ["h"]
     }, 
     async execute(msg, args) {
         let arg;

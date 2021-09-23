@@ -4,7 +4,8 @@ const {MessageEmbed, Message} = require("discord.js");
 module.exports = {
     data: {
         name: "usage",
-        description: "Provides the current number of api calls used over the maximum allowed api calls."
+        description: "Provides the current number of api calls used over the maximum allowed api calls.",
+        aliases: ["u"]
     },
     async execute(msg, args) {
         const {usage, usage_limit} = require("../config.json");

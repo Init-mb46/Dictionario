@@ -40,6 +40,17 @@ client.on("messageCreate", async msg => {
 
     try {
         if (!actualCommand) {
+            let matched = false;
+            let cmdName;
+            for(const [name, command] of client.commands.entries()) {
+                command.data.aliases.forEach(v => cmd == v ? matched = true : matched = false);
+                if (matched) {
+                    actualCommand = client.commands.get(name);
+                    await actualCommand.execute(msg,args);
+                    return;
+                }
+            }
+
             await msg.reply({embeds: [await makeEmbed("Command not found", `Type ${pref}help for a list of commands.`)]});
             return;
         }
