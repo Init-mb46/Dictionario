@@ -68,4 +68,4 @@ client.login(t);
 async function checkOnline() {
     console.log("online: " + new Date());
 }
-const CheckTO = setInterval(() => checkOnline(), 300000)
+const CheckTO = setInterval(() => checkOnline(), 300000);
